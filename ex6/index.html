@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex6</title>
+</head>
+
+<body>
+    <h1>
+        Variável Constante
+    </h1>
+    <p>
+        Crie uma página onde você declare uma constante com const, tente alterar seu valor no JavaScript e mostre o erro
+        no console. Adicione CSS para estilizar um aviso explicativo.
+    </p>
+</body>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-family: cursive;
+        font-size: 20px;
+        color: chartreuse;
+    }
+
+    p {
+        font-family: cursive;
+        font-size: 15px;
+        color: deeppink;
+    }
+</style>
+
+<script>
+    const valor = 10;
+
+    const alteracao = prompt("altere(ou tente) o valor do constante:");
+
+    if (valor == 10) {
+        alert("erro: valor não foi alterado");
+        console.log("valor é " + valor);
+    }
+    else {
+        alert("valor foi alterado");
+        console.log("o valor era " + valor + ", agora é " + alteracao);
+    }
+</script>
+
+</html>

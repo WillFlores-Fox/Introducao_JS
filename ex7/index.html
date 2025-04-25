@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex7</title>
+</head>
+
+<body>
+    <h1>
+        Declaração com var
+    </h1>
+
+    <p>
+        Use HTML e CSS para apresentar um botão. No clique, o JavaScript deve declarar uma variável com var, redeclarar
+        com outro valor e mostrar ambos no console para comparação.
+    </p>
+
+    <button class="btn1" onclick="mostrar()">
+        alterar aqui
+    </button>
+</body>
+
+<style>
+    .btn1 {
+        background-color: yellow;
+        color: black;
+        font-family: cursive;
+        font-size: 30px;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-family: cursive;
+        font-size: 40px;
+        color: crimson;
+    }
+
+    p {
+        font-family: cursive;
+        font-size: 25px;
+        max-width: 75%;
+    }
+</style>
+
+<script>
+    var valor1 = "bom dia";
+    console.log(valor1);
+    function mostrar() {
+        var valor1 = prompt("digite uma alteracao:");
+        console.log(valor1);
+    }
+</script>
+
+</html>

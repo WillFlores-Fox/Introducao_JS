@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4</title>
+</head>
+
+<body>
+    <h1>
+        Dados no Console
+    </h1>
+    <p>
+        Crie uma página com HTML e um botão estilizado com CSS. Ao clicar, use JavaScript para perguntar nome e idade e
+        mostrar esses dados no console com console.log().
+    </p>
+    <button class="btn1" onclick="mostrar()">
+        aperte aqui!
+    </button>
+</body>
+
+<style>
+    .btn1 {
+        background-color: yellow;
+        color: black;
+        font-family: cursive;
+        font-size: 30px;
+    }
+</style>
+
+<script>
+    function mostrar() {
+        let nome = prompt("Digite seu nome:");
+        let idade = prompt("Digite sua idade:");
+
+        alert("Olá, " + nome + "! Você tem " + idade + " anos.");
+        console.log("Usuário: " + nome + " | Idade: " + idade);
+    }
+</script>
+
+</html>

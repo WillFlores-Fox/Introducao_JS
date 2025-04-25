@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex5</title>
+</head>
+
+<body>
+    <h1>
+        Frase Montada
+    </h1>
+    <p>
+        Utilize HTML para estruturar a página e CSS para o visual. Use JavaScript com let para guardar três palavras
+        inseridas via prompt() e depois exiba uma frase com elas usando alert().
+    </p>
+</body>
+
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1{
+        font-family: cursive;
+        font-size: 40px;
+        color: crimson;
+    }
+
+    p{
+        font-family: cursive;
+        font-size: 25px;
+        max-width: 75%;
+    }
+</style>
+
+<script>
+    let f1 = prompt("palavra 1:");
+    let f2 = prompt("palavra 2:");
+    let f3 = prompt("palavra 3:");
+    let fc = f1 + " " + f2 + " " + f3;
+
+    alert("sua frase é " + fc);
+</script>
+
+</html>
