@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex10</title>
 </head>
+
 <body>
     <h1>
-
+        Caixa de Texto com Alerta
     </h1>
 
     <p>
-
+        Crie um campo de texto e um botão com HTML. Estilize com CSS. No clique, use JavaScript para mostrar o conteúdo
+        do campo com alert().
     </p>
-    <input type="text">
+    <input id="area" type="text">
+    <button onclick="mostra()">APAREÇA!</button>
 </body>
 
 <style>
-    input
+    input {
+        width: 100%;
+        height: 100%;
+        font-size: 50px;
+        font-family: cursive;
+    }
+
+    button {
+        background-color: yellow;
+        width: 100%;
+        height: 100%;
+        font-size: 50px;
+        font-family: cursive;
+    }
 </style>
+
+<script>
+    function mostra() {
+        const area = document.getElementById('area').value;
+        alert(area);
+    }
+</script>
+
 </html>
